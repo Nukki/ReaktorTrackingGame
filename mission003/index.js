@@ -1,6 +1,15 @@
 const fs = require('fs');
 
 /*
+  Calculates flood volume on an interval
+  @flood is an array of the flood interval
+*/
+const floodVolume = flood => {
+  let startFlood = flood[0];
+  return flood.reduce((acc, curr) => acc + (startFlood - curr) , 0);
+}
+
+/*
   returns an array of flood danger volumes of given array
 */
 const floodsOnPositiveSlope = arr => {
@@ -25,10 +34,7 @@ const floodsOnPositiveSlope = arr => {
   }
 
   // calculate flood danger volume for each interval
-  return floods.map(flood => {
-     let startFlood = flood[0];
-     return flood.reduce((acc, curr) => acc + (startFlood - curr) , 0);
-  });
+  return floods.map(floodVolume);
 }
 
 
