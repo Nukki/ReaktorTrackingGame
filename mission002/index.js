@@ -75,7 +75,7 @@ const findDangerousAnomaly = fileName => {
   }
 }
 
-findDangerousAnomaly('ppb.bin.log');
+findDangerousAnomaly('ppb.binlog');
 /*
   console output:
   1249458 is an anomaly, on Dec 25 at 5 o'clock

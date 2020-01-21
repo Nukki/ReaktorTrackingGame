@@ -9,4 +9,4 @@ You have completed a month long satellite sweep of the entire pipeline using hyp
 While the levels of any given contaminant vary wildly over time, the total level of all contaminants combined should remain within a standard deviation at all times.
 The sketches you found show that Unnamed has been tampering with the pipeline. Your task is to figure out where - find the dangerous anomalies in the satellite readings and report them to the pipeline engineers.**
 
-*satellite reading are ppb.bin.log*
+*satellite readings are ppb.binlog*
